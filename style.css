@@ -1,0 +1,138 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container_left {
+  width: 70%;
+  padding: 1rem;
+}
+
+.container_right {
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fixed_container {
+  position: fixed;
+  width: 25%;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.form_create_post {
+  flex-direction: column;
+  display: flex;
+  /* width: 100%; */
+  background: lightblue;
+  padding: 2rem;
+}
+
+.form_update_post {
+  flex-direction: column;
+  display: flex;
+  /* width: 100%; */
+  background: lightblue;
+  padding: 2rem;
+
+  margin-top: 10px;
+}
+
+.button_container {
+  margin-bottom: 1rem;
+}
+
+.button_container button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.button_container input[type="text"] {
+  padding: 0.5rem;
+}
+
+.posts_container {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  color: #2e2c2f;
+}
+
+.post_card {
+  border: 1px solid #2e2c2f;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgb(240, 239, 239);
+}
+
+.post_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_edit {
+  height: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #e1e1e1;
+  font-size: 15px;
+}
+.post_edit:hover {
+  background-color: rgb(255, 255, 255);
+}
+.input {
+  padding: 1rem;
+  border-radius: 5px;
+  outline: unset;
+  border: 1px solid white;
+}
+
+.button {
+  padding: 1rem;
+  border-radius: 5px;
+  outline: unset;
+  border: none;
+  background: #2e2c2f;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #49464a;
+}
+
+.button:disabled {
+  background-color: lightslategray;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.text-red {
+  color: red;
+}
+
+.error-message {
+  margin-top: 0.1rem;
+  font-size: 0.9rem;
+  color: darkred;
+}
+
+.hidden {
+  visibility: hidden;
+  display: contents; /*da ne ostane prazno mjesto kad uklonimo index polje*/
+}
+
+.border-red {
+  border-color: darkred;
+}
