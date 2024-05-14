@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="container_left">
+        <div class="button_container">
+          <button id="button-clear">clear</button>
+          <button id="button-show">show</button>
+          <input id="input-search" type="text" placeholder="Search" />
+        </div>
+        <div id="posts" class="posts_container">
+          <div class="post_card">
+            <div class="post_top">
+              <button class="post_edit">edit</button>
+            </div>
+          </div>
+        </div>
+        <div id="comment-container"></div>
+      </div>
+      <div class="container_right">
+        <div class="fixed_container">
+          <div class="form_create_post">
+            <h3>Create</h3>
+            <input
+              id="form-post-headline"
+              class="input"
+              type="text"
+              placeholder="Headline"
+            />
+            <p id="error-message-headline" class="error-message hidden">
+              Field must not be empty
+            </p>
+            <input
+              id="form-post-description"
+              class="input"
+              type="text"
+              placeholder="Description"
+            />
+            <p id="error-message-description" class="error-message hidden">
+              Field must not be empty
+            </p>
+            <button id="form-post-button-create" class="button" disabled>
+              create
+            </button>
+            <p id="error_message" class="text-red"></p>
+          </div>
+          <div class="form_update_post">
+            <h3>Update</h3>
+            <input
+              id="form-update-index"
+              class="input"
+              type="number"
+              placeholder="Index"
+            />
+            <p id="error-message-index" class="error-message hidden">
+              Field must not be empty
+            </p>
+            <input
+              id="form-update-headline"
+              class="input"
+              type="text"
+              placeholder="Headline"
+            />
+            <p id="error-message-headline" class="error-message hidden">
+              Field must not be empty
+            </p>
+            <input
+              id="form-update-description"
+              class="input"
+              type="text"
+              placeholder="Description"
+            />
+            <p id="error-message-description" class="error-message hidden">
+              Field must not be empty
+            </p>
+            <button id="form-update-button-create" class="button">
+              update
+            </button>
+            <p id="error_message" class="text-red"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
